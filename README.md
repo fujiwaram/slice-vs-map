@@ -101,3 +101,5 @@ Benchmark_mapSearch____50000_10000-12                       4281            2638
 PASS
 ok      github.com/fujiwaram/slice-vs-map       122.127s
 ```
+
+<img src='./Slice-vs-Map.png'>
