@@ -9,11 +9,12 @@ type mapSearchFunc func(m map[int]int, searches []int) (pos []int)
 func LinearSearch(nums, searches []int) (pos []int) {
 	pos = make([]int, len(searches))
 	for si, s := range searches {
-		idx := sort.Search(len(nums), func(i int) bool { return nums[i] >= s })
-		if idx < len(nums) && nums[idx] == s {
-			pos[si] = idx
-		} else {
-			pos[si] = -1
+		pos[si] = -1
+		for i, num := range nums {
+			if s == num {
+				pos[si] = i
+				break
+			}
 		}
 	}
 	return pos
