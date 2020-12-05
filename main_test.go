@@ -17,11 +17,11 @@ var (
 	search10000 = makeSeqNums(10000)
 	search50000 = makeSeqNums(50000)
 
-	search3NotFound     = []int{10001, 10001, 10001}
-	search100NotFound   = makeSpecificNums(10001, 100)
-	search1000NotFound  = makeSpecificNums(10001, 1000)
-	search10000NotFound = makeSpecificNums(10001, 10000)
-	search50000NotFound = makeSpecificNums(50001, 50000)
+	search3NotFound     = []int{-1, -1, -1}
+	search100NotFound   = makeSpecificNums(-1, 100)
+	search1000NotFound  = makeSpecificNums(-1, 1000)
+	search10000NotFound = makeSpecificNums(-1, 10000)
+	search50000NotFound = makeSpecificNums(-1, 50000)
 )
 
 // 順番に並んだ数値のスライスを作成
